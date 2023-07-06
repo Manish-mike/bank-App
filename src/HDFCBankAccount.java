@@ -11,6 +11,14 @@ public class HDFCBankAccount {
     public void setBalance(int balance) {
         this.balance = balance;
     }
+    @override
+    public Boolean isMinimumBalance(int money) {
+        if(this.balance + money > 2000) {
+            return true;
+        }else{
+            return false;
+        }
+    }
 
     @override
     public Boolean withdrawMoney(int money) {

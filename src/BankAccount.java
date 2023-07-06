@@ -1,6 +1,8 @@
 public interface BankAccount {
     Boolean withdrawMoney(int money);
 
+    Boolean isMinimumBalance(int money);
+
 
 
     //withdraw money
