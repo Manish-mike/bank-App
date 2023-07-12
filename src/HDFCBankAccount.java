@@ -28,4 +28,13 @@ public class HDFCBankAccount {
         }
         return false;
     }
+
+    public Boolean isEligibleForFixedDeposit(int money) {
+        if(this.balance >= 50000) {
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
